@@ -12,6 +12,7 @@ Only write entries that are worth mentioning to users.
 ## Unreleased
 
 - Kosong: Stop sending an empty `anthropic-beta` header when no beta features are declared — adaptive thinking removes the interleaved-thinking beta, which previously left an empty header value that some backends reject
+- ACP: `AskUserQuestion` now signals `QuestionNotSupported` instead of resolving an empty answer, so the model falls back to asking in plain text rather than seeing a phantom user dismissal
 
 ## 1.49.0 (2026-07-16)
 
