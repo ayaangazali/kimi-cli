@@ -12,6 +12,7 @@ Only write entries that are worth mentioning to users.
 ## Unreleased
 
 - Kosong: Stop sending an empty `anthropic-beta` header when no beta features are declared — adaptive thinking removes the interleaved-thinking beta, which previously left an empty header value that some backends reject
+- Tools: Fix the StrReplaceFile success message reporting the wrong replacement total when multiple edits interact; the count now follows the running content instead of the original file
 
 ## 1.49.0 (2026-07-16)
 
